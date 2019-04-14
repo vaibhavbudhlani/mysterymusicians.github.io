@@ -1,0 +1,238 @@
+#header {
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+#header .sociable {
+    width: 35%;
+}
+#header .sociable ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 8px;
+    color: #fff;
+    font-size: 20px;
+}
+#header .sociable ul li a{
+    color: #fff;
+}
+@media(max-width: 1200px) {
+    #header form {
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    #header .sociable {
+        display: none;
+    }
+}
+
+#content {
+    margin-top: 100px;
+}
+
+@media(max-width: 1200px) {
+    #content .container {
+        max-width: 1100px;
+    }
+}
+
+#audio {
+    display: none;
+    position: absolute;
+}
+
+#banner {
+    margin-bottom: 10px;
+}
+#banner img {
+    max-height: 300px;
+}
+
+
+#audioPlayer {
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 10;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 80px;
+}
+
+#songs {
+    margin-top: 20px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+#songs li {
+    text-align: center;
+    margin: 0px 10px 30px;
+    width: 22%;
+    position: relative;
+}
+#songs li .cover{
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+}
+#songs li span {
+    cursor: pointer;
+    display: block;
+    margin: 10px 0px;
+}
+#songs li .playIcon,#playList li .playIcon {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/playarrow.png);
+    background-size: 100% 100%;
+}
+/*#songs li .playIcon,#playList li .pauseIcon {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/pause.png);
+    background-size: 100% 100%;
+}*/
+#songs li .playListBtn {
+    /* position: absolute; */
+    /* right: 20px; */
+}
+
+@media(max-width: 1200px) {
+    #songs li  {
+        width: 30%;
+    }
+}
+@media(max-width: 1200px) {
+    #songs li  {
+        margin: 0px 8px 30px;
+    }
+}
+@media(max-width: 576px) {
+    #songs li  {
+        width: 45%;
+        margin: 0px 5px 30px;
+        font-size: 13px;
+    }
+}
+
+#playList li img{
+    width: 20%;
+}
+#playList li .playIcon {
+    left: 30px;
+}
+#playList li span {
+    cursor: pointer;
+}
+#playList li .deleteBtn {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: black;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+#footerid {
+    background-color:#DC3545 ;
+}
+#last {
+    background-color: #DC3545;
+    margin-bottom: 500px;
+}
+#last a{
+    color: white;
+}
+
+#main{
+    margin-bottom: 30px;
+}
+#footer{
+    height: 200px;
+}
+/*
+#audioplayer{
+}
+*/
+/* footer css */
+#footer {
+    background-color: #dc3545;
+}
+.row{
+    display: flex;
+}
+.col1,.col2,.col3,.col4,.col5{
+    width: 20%;
+}
+#topfooter{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#middlefooter ul{
+    list-style: none;
+}
+#middlefooter ul li{
+    line-height: 20px;
+}
+#middlefooter ul li a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    width:100%;
+    
+}
+
